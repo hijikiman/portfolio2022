@@ -1,0 +1,22 @@
+version: '3.8'
+
+
+services:
+    frontend:
+        image: ${PROJECT_NAME}_image
+        container_name: ${PROJECT_NAME}
+        build: 
+          context: .
+          dockerfile: ./Dockerfile
+        volumes:
+            - ./app:/root/${PROJECT_NAME}/app
+            # for bash prompt
+            - ~/dotfiles/:/root/dotfiles/:ro
+        working_dir: /root/${PROJECT_NAME}/app
+        environment:
+            - PORT=${FRONTEND_PORT}
+        ports:
+            - ${FRONTEND_PORT}:${FRONTEND_PORT}
+        # command: bash -c "bash /root/dotfiles/makeSymbolicLinks_forDocker.sh ; gatsby develop -H 0.0.0.0" 
+        command: bash -c "bash /root/dotfiles/makeSymbolicLinks_forDocker.sh ; bash"
+        tty: true
