@@ -17,6 +17,5 @@ services:
             - PORT=${FRONTEND_PORT}
         ports:
             - ${FRONTEND_PORT}:${FRONTEND_PORT}
-        # command: bash -c "bash /root/dotfiles/makeSymbolicLinks_forDocker.sh ; gatsby develop -H 0.0.0.0" 
-        command: bash -c "bash /root/dotfiles/makeSymbolicLinks_forDocker.sh ; bash"
+        command: bash -c "bash /root/dotfiles/makeSymbolicLinks_forDocker.sh ; gatsby develop -H 0.0.0.0" 
         tty: true
