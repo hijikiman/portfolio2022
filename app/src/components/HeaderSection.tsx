@@ -1,5 +1,6 @@
 import type { HeadFC, PageProps } from 'gatsby'
 import { css } from '@emotion/react'
+import theme from '../styles/theme'
 import heroImg from '../images/hero.png'
 
 const HeaderSection: React.FC<PageProps> = () => {
@@ -29,7 +30,7 @@ const title = css`
     letter-spacing: ${headerTitleLetterSpacing};
     font-family: 'Rajdhani';
     font-weight: 500;
-    color: #7a5646;
+    color: ${theme.primaryFontColor};
     margin: 0 -${headerTitleLetterSpacing} 0 0;
 `
 const icon = css`
