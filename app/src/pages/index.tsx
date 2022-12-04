@@ -3,11 +3,13 @@ import type { HeadFC, PageProps } from 'gatsby'
 import 'sanitize.css'
 import '../styles/index.css'
 import HeaderSection from '../components/HeaderSection'
+import AboutSection from '../components/AboutSection'
 
 const IndexPage: React.FC<PageProps> = () => {
     return (
         <div>
             <HeaderSection />
+            <AboutSection />
         </div>
     )
 }
