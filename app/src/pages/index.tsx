@@ -27,13 +27,14 @@ const hero = css`
     align-items: center;
     flex-direction: column;
 `
+const headerTitleLetterSpacing = '0.435em'
 const title = css`
     font-size: 96px;
-    letter-spacing: 0.435em;
+    letter-spacing: ${headerTitleLetterSpacing};
     font-family: 'Rajdhani';
     font-weight: 500;
     color: #7a5646;
-    margin: 0;
+    margin: 0 -${headerTitleLetterSpacing} 0 0;
 `
 const icon = css`
     width: 112px;
