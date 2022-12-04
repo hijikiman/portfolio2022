@@ -1,7 +1,7 @@
 import * as React from 'react'
 import type { HeadFC, PageProps } from 'gatsby'
 import 'sanitize.css'
-import './index.css'
+import '../styles/index.css'
 import HeaderSection from '../components/HeaderSection'
 
 const IndexPage: React.FC<PageProps> = () => {
