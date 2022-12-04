@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Rajdhani:wght@500&family=Sawarabi+Gothic&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', 'Rajdhani', 'Sawarabi Gothic', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  font-family : inherit;
+  font-size   : 100%;
+}

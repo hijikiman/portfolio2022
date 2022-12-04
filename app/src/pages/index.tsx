@@ -2,6 +2,7 @@ import * as React from 'react'
 import type { HeadFC, PageProps } from 'gatsby'
 import { css } from '@emotion/react'
 import 'sanitize.css'
+import './index.css'
 import heroImg from '../images/hero.png'
 // import { StaticImage } from "gatsby-plugin-image";
 
