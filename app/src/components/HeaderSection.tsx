@@ -24,7 +24,7 @@ const hero = css`
     align-items: center;
     flex-direction: column;
 `
-const headerTitleLetterSpacing = '0.435em'
+const headerTitleLetterSpacing: string = '0.435em'
 const title = css`
     font-size: 96px;
     letter-spacing: ${headerTitleLetterSpacing};
