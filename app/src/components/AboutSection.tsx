@@ -3,6 +3,8 @@ import { css } from '@emotion/react'
 import theme from '../styles/theme'
 import barrelImg from '../images/barrel.png'
 
+const fruitsColors: string[] = ['#9aa2c0', '#ad9ac0', '#c09ab8']
+
 const AboutSection: React.FC<PageProps> = () => {
     return (
         <section>
@@ -23,6 +25,16 @@ const AboutSection: React.FC<PageProps> = () => {
                         <br />
                         私はHOKORAという雅号を掲げ、新鮮な体験をこれからも生み出し続けます。
                     </p>
+                </div>
+                <div css={fruitsBox}>
+                    {fruitsColors.map((c) => (
+                        <div
+                            css={css`
+                                background: ${c};
+                                ${fruits}
+                            `}
+                        />
+                    ))}
                 </div>
             </div>
         </section>
@@ -82,6 +94,20 @@ const paragraph = css`
     color: #d3e7f7;
     position: relative;
     z-index: 0;
+`
+const fruitsBox = css`
+    display: flex;
+    transform: translateY(50%);
+    width: 100%;
+    justify-content: center;
+`
+const fruits = css`
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    &:not(:first-child) {
+        margin-left: 28px;
+    }
 `
 
 export default AboutSection
