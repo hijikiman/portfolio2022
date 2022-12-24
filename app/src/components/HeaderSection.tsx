@@ -10,6 +10,7 @@ const HeaderSection: React.FC<PageProps> = () => {
                 <h1 css={title}>HOKORA</h1>
                 <img css={icon} />
             </header>
+            <div css={gradation} />
         </section>
     )
 }
@@ -39,6 +40,10 @@ const icon = css`
     background: #ffebb9;
     border-radius: 50%;
     margin-bottom: 144px;
+`
+const gradation = css`
+    height: 231px;
+    background: linear-gradient(180deg, #858ca6 0%, #4c4a69 100%);
 `
 
 export default HeaderSection
