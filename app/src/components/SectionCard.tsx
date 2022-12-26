@@ -22,6 +22,9 @@ const card = css`
     background: #c4c4c4;
     border-radius: 69px;
     padding: 35px 44px 80px 44px;
+    &:not(:first-child) {
+        margin-top: 90px;
+    }
 `
 const heading = css`
     background: linear-gradient(90deg, #a2c8d8 4.17%, #d4c098 60.42%);

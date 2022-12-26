@@ -6,6 +6,7 @@ import HeaderSection from '../components/HeaderSection'
 import AboutSection from '../components/AboutSection'
 import MainLayout from '../components/MainLayout'
 import ServiceSection from '../components/ServiceSection'
+import BlogSection from '../components/BlogSection'
 
 const IndexPage: React.FC<PageProps> = () => {
     return (
@@ -14,6 +15,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <AboutSection />
             <MainLayout>
                 <ServiceSection />
+                <BlogSection />
             </MainLayout>
         </div>
     )
