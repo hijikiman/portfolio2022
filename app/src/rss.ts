@@ -13,12 +13,14 @@ async function fetchFeedItems(url: string) {
     const feed = await parser.parseURL(url)
     if (!feed?.items?.length) return []
 
-    return feed.items.map(({ title, link, contentSnippet, isoDate }) => ({
-        title,
-        link,
-        contentSnippet,
-        isoDate,
-    })) as FeedItem[]
+    return feed.items
+        .map(({ title, link, contentSnippet, isoDate }) => ({
+            title,
+            link,
+            contentSnippet,
+            isoDate,
+        }))
+        .slice(0, 3) as FeedItem[]
 }
 
 ;(async function () {
